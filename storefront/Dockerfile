@@ -17,8 +17,8 @@ RUN \
 COPY src ./src
 COPY public ./public
 COPY next.config.js .
-COPY jsconfig.json .
-COPY next-sitemap.config.js .
+# COPY jsconfig.json .
+# COPY next-sitemap.config.js .
 COPY .babelrc .
 
 # Environment variables must be present at build time
