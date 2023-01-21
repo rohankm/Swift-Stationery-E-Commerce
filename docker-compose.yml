@@ -43,11 +43,11 @@ services:
     environment:
       NODE_OPTIONS: --openssl-legacy-provider
 
-  storefront:
-    build:
-      context: ./storefront
-      dockerfile: Dockerfile
-    image: storefront:test
-    container_name: medusa-storefront
-    depends_on:
-      - backend
+  # storefront:
+  #   build:
+  #     context: ./storefront
+  #     dockerfile: Dockerfile
+  #   image: storefront:test
+  #   container_name: medusa-storefront
+  #   depends_on:
+  #     - backend

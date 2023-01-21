@@ -7,19 +7,19 @@ services:
       - ./backend:/app/medusa
       - backend_node_modules:/app/medusa/node_modules
     ports:
-      - "9000:9000"
+      - "9003:9000"
 
   admin:
     ports:
-      - "7000:7000"
+      - "7003:7000"
 
-  storefront:
-    volumes:
-      - ./storefront:/app/storefront
-      - storefront_node_modules:/app/storefront/node_modules
-    ports:
-      - "8000:8000"
+  # storefront:
+  #   volumes:
+  #     - ./storefront:/app/storefront
+  #     - storefront_node_modules:/app/storefront/node_modules
+  #   ports:
+  #     - "8000:8000"
 
 volumes:
-  storefront_node_modules:
+  # storefront_node_modules:
   backend_node_modules:
