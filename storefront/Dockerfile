@@ -19,7 +19,7 @@ COPY public ./public
 COPY next.config.js .
 # COPY jsconfig.json .
 # COPY next-sitemap.config.js .
-COPY .babelrc .
+# COPY .babelrc .
 
 # Environment variables must be present at build time
 # https://github.com/vercel/next.js/discussions/14030
